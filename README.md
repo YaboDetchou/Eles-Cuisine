@@ -12,5 +12,3 @@ HTML5, CSS3, and JavaScript
 https://eles-cuisine.netlify.app/
 
 
-<img align="center" width="100" height="100 src="https://www.dropbox.com/s/zcy6vri5uwlb5vg/elescuisine.png?dl=0">
-
