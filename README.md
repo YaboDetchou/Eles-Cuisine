@@ -10,5 +10,3 @@ HTML5, CSS3, and JavaScript
 
 ##### View Site:
 https://eles-cuisine.netlify.app/
-
-
