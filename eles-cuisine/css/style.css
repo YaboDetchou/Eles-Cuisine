@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=IBM+Plex+Serif:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+:root {
+  --mainTransition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+}
+#nav-bar {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* padding: 1.5rem; */
+  position: fixed;
+  /* color: #8d8d8d; */
+  /* background: white; */
+  /* width: 100%; */
+  z-index: 2;
+}
+.nav-links a:hover {
+  color: rgb(109, 44, 0);
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-links a {
+  margin-right: 2rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover {
+  margin-right: 2rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.reservations-info {
+  text-transform: uppercase;
+  color: gray;
+  padding-right: 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+.hero img {
+  transition: var(--mainTransition);
+
+  max-width: 100%;
+}
+.fade::after {
+  content: "";
+  background-color: #dddddd;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade:hover::after {
+  opacity: 0.3;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  background: rgb(236, 236, 236);
+  text-align: center;
+  line-height: 2.5rem;
+  padding: 3rem;
+  grid-gap: 50px;
+  color: rgb(65, 65, 65);
+}
+
+.loc {
+  font-size: 15px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 0.4rem;
+}
+.location h3 {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+.location i {
+  font-size: 40px;
+}
+.aboutus {
+  background: linear-gradient(#383838, rgba(20, 20, 20, 0.4)),
+    url(https://www.dropbox.com/s/3s4egvklgnajwhd/pexels-rene-asmussen-3217156.jpg?raw=1);
+  background-size: 100%;
+  background-position: 50% 45%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  max-height: 100%;
+  justify-content: center;
+  background-repeat: no-repeat;
+  letter-spacing: 0.2rem;
+  color: #e8e8e8;
+  text-transform: uppercase;
+  font-family: "Assistant", sans-serif;
+}
+.aboutus h2 {
+  font-size: 350%;
+  text-align: center;
+  padding: 0 3rem;
+  /* padding: 3rem; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: #ede7f6;
+  /* padding: 1.5rem; */
+  border-radius: 1rem;
+}
+body {
+  /* margin: 2rem; */
+  font: 12px system-ui;
+}
+
+.favorites {
+  color: white;
+  background: rgb(22, 22, 22);
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 5rem;
+}
+
+.description {
+  width: 60%;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  color: rgb(219, 219, 219);
+  font-weight: lighter;
+}
+.food-name {
+  width: 90%;
+  font-size: 1.4rem;
+  line-height: 6rem;
+  /* padding: 2rem 5rem; */
+
+  font-family: "Bodoni Moda", serif;
+}
+
+.catchphrase {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  /* padding: */
+}
+.favorites {
+  font-family: "Bodoni Moda", serif;
+  font-family: "IBM Plex Serif", serif;
+  padding: 8rem 8rem;
+}
+.favorites a {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  font-family: "Bodoni Moda", serif;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.display-foods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.display-foods img {
+  max-width: 100%;
+}
+
+.food-sub {
+  font-size: 55px;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  padding-top: 4rem;
+}
+.display-foods h3 {
+  text-align: center;
+  line-height: 2.5rem;
+
+  color: rgb(65, 65, 65);
+}
+
+.display-foods h5 {
+  text-align: center;
+
+  color: rgb(65, 65, 65);
+  font-size: 15px;
+
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 0.4rem;
+}
+.description-special {
+  text-align: center;
+  line-height: 2.5rem;
+  color: rgb(65, 65, 65);
+  font-size: 20px;
+  font-family: "Assistant", sans-serif;
+  padding: 5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.footer-info {
+  color: white;
+  background: rgb(22, 22, 22);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+
+  font-family: "Bodoni Moda", serif;
+}
+.title-info {
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
+
+.title-info p {
+  font-size: 1rem;
+  font-family: "Assistant", sans-serif;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+.socials {
+  background-color: white;
+  font-family: "Bodoni Moda", serif;
+  display: grid;
+  font-size: 0.8rem;
+  /* padding: 6rem 0rem; */
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.media {
+  display: flex;
+}
+.media h1 {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.developer {
+  padding: 0rem 2.5rem;
+  color: #8d8d8d;
+}
+
+.media h1:hover {
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.nav-bar h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-right: 3rem;
+}
+.page-title {
+  min-height: calc(100vh - 60px);
+  background: url("https://www.dropbox.com/s/swgf1ysa1fhyndn/pexels-ashwin-alok-418806.jpg?raw=1")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  min-height: calc(100vh + 190px);
+  background: url("https://www.dropbox.com/s/de8a0229rx6r1b9/pexels-evie-shaffer-2395249.jpg?raw=1")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 4rem;
+  width: 70%;
+  color: white;
+  background: rgba(0, 0, 0, 0.61);
+  font-size: 1rem;
+}
+.container-contact {
+  padding: 1rem 4rem;
+  width: 50%;
+  color: #383838;
+  background: rgba(255, 255, 255, 0.637);
+  font-size: 1rem;
+}
+
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+}
+
+.container h5 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.container-contact p {
+  /* margin-bottom: 3rem; */
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 1px solid rgb(109, 44, 0);
+  text-align: center;
+}
+#contactform {
+  /* padding: 3rem; */
+  margin: 2rem auto;
+  /* background: rgba(255, 255, 255, 0.637); */
+  padding: 3rem;
+}
+label {
+  display: block;
+}
+
+input,
+textarea {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(109, 44, 0);
+  background-color: #f5f5f5;
+}
+.submit-btn {
+  display: block;
+  padding-left: 3rem;
+
+  color: white;
+  width: 70%;
+  padding-bottom: 2rem;
+}
+
+#day,
+#time {
+  margin: 1rem 0rem;
+}
+
+button {
+  padding: 0.8rem;
+  color: white;
+  background-color: rgb(109, 44, 0);
+  border: none;
+  font-size: 1rem;
+}
+button:hover {
+  background: rgba(109, 44, 0, 0.61);
+  cursor: pointer;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  line-height: 30px;
+  background-color: black;
+  color: white;
+  padding: 0 32px;
+  transition: 400ms;
+  box-shadow: 0 -2px 16px black;
+}
+
+/* .cookie-container .active {
+  bottom: 0;
+} */
+
+.cookie-container a {
+  color: white;
+}
+
+.cookie-btn {
+  background-color: rgb(109, 44, 0);
+  color: #fff;
+  border: 0;
+  padding: 10px 49px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+  .display-foods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+#pop-up button {
+  background: black;
+  padding: 0.5rem 1.5rem;
+}
