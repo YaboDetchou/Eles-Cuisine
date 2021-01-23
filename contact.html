@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+        <link rel="icon" href="https://www.dropbox.com/s/7w23bqinywpwesz/restaurant.png?raw=1" type="image/gif">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        
+<style>
+    #nav-bar,
+    .wrapper,
+    .footer-info,
+    .socials {
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+    <!-- navigation -->
+    <div id="nav-bar" style="width: 100%;">
+        <div class="nav-links" style="padding: 1.3rem; background-color: black; ">
+            <a href="index.html" style="color: white;">Home</a>
+            <a href="about.html" style="color: white;">About</a>
+            <a href="menu.html" style="color: white;">Menu</a>
+            <a href="contact.html" style="color: white;">Contact</a>
+        </div>
+            <h2>Ele's Cuisine</h2>
+        </div>
+        <div class="reservations-info"> Reservations &nbsp; 543.324.4424</div>
+    </div>
+    <!-- contact form -->
+
+        <div class="wrapper">
+            <div class="container-contact">
+               <p>Please be our guest</p> 
+        <form id="contactform" action="" method="post">
+                    <label for="day">Full Name: </label>
+   <input name="name"  type="text" placeholder="" class="formstyle" required><br>
+                 
+   <label for="day">Telephone: </label>
+
+            <input name="phone" type="phone" placeholder="" class="formstyle" required><br>
+        
+            <label for="day">Reservation Day: </label>
+            <select id="day" name="day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+
+            </select>
+            <br>
+            <label for="time">Reservation Time: </label>
+            <select id="time" name="time">
+                <option value="9">9.AM</option>
+                <option value="2">2.PM</option>
+                <option value="5">5.PM</option>
+                <option value="7">7.PM</option>
+                <option value="9">9.PM</option>
+            </select>
+            <br>
+            <label for="day">Message: </label>
+       
+            <textarea name="message" class="formstyle"
+                placeholder="Please enter your message here."></textarea>
+        </form>
+                <div class="submit-btn">
+                    <button type="submit">Make Reservation</button>
+                </div>
+            </div>
+        </div>
+
+
+<!-- footer -->
+<div class="footer-info">
+    <div class="flex-footer">
+        <div class="title-info">
+            Hours
+            <p>Mon - Wed, 7 am - 9 pm</p>
+            <p>Thr - Sat, 10 am - 11 pm</p>
+            <p>Closed Sundays</p>
+        </div>
+
+        <div class="title-info">
+            Contact
+            <p>543.324.4424</p>
+            <p>dinning.elescuisine@gmail.com</p>
+        </div>
+    </div>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=manhattan,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://grantorrent-es.com">grantorrent</a><br>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 90%;
+                    /* margin-right: 3rem; */
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+            </style><a href="https://www.embedgooglemap.net">google map widget for website</a>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 90%;
+                    /* margin-right: 3rem; */
+
+                }
+            </style>
+        </div>
+    </div>
+
+</div>
+<!-- socials link -->
+<div class="socials">
+    <div class="media">
+        <h1>Facebook </h1>
+        <h1> Instagram </h1>
+        <h1>Youtube</h1>
+    </div>
+    <div class="developer">copyright &#169; 2021 Yabo Detchou </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="javascript.js"></script>
+</body>
+</html>
